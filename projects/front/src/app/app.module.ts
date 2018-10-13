@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { CardViewModule } from 'lib';
+import { LibModule } from 'lib';
 
 import { AppComponent } from './app.component';
 
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    CardViewModule
+    LibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
