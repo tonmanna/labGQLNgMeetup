@@ -1,0 +1,16 @@
+type League {
+    identifier: String
+    league_slug: String
+    name: String
+    nation: String
+    level: Int
+    federation: String
+    cup: Boolean
+}
+extend type Query {
+    leagues: [League]
+}
+
+input LeagueInput {
+    league_slug: String
+}

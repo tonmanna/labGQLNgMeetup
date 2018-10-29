@@ -1,9 +1,24 @@
 {
-    "files.exclude": {
-        "**/.git": true, // this is a default value
-        "**/.DS_Store": true, // this is a default value
-        "**/node_modules": true, // this excludes all folders
-        "**/dist": true, // this excludes all folders
-        "**/yarn.lock": true
-    }
+  "tslint.exclude": "**/*.spec.ts",
+  "files.exclude": {
+    "**/.git": true, // this is a default value
+    "**/.DS_Store": true, // this is a default value
+    "**/node_modules": true, // this excludes all folders
+    "**/dist": true,
+    "**/yarn.lock": true
+  },
+  "python.formatting.provider": "yapf",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "eslint.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.eslintIntegration": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
+  "eslint.options": {
+    "configFile": "./api/.eslintrc.js",
+  }
 }

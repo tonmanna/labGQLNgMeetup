@@ -1,0 +1,17 @@
+type topScore {
+    identifier: String
+    fullname: String
+    player_identifier: String
+    nationality: String
+    number: Int
+    position: String
+    goals: Int
+    penalties: Int
+    matches: Int
+    team: String
+    team_identifier: String
+}
+
+type Mutation {
+    getLeageTopScore(league_slug: LeagueInput): League
+}
