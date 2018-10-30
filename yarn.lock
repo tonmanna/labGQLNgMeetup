@@ -426,6 +426,10 @@
   dependencies:
     "@types/node" "*"
 
+"@types/async@2.0.50":
+  version "2.0.50"
+  resolved "http://172.16.1.252:4873/@types%2fasync/-/async-2.0.50.tgz#117540e026d64e1846093abbd5adc7e27fda7bcb"
+
 "@types/body-parser@*", "@types/body-parser@1.17.0":
   version "1.17.0"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.17.0.tgz#9f5c9d9bd04bb54be32d5eb9fc0d8c974e6cf58c"
@@ -528,6 +532,10 @@
   dependencies:
     "@types/events" "*"
     "@types/node" "*"
+
+"@types/zen-observable@^0.8.0":
+  version "0.8.0"
+  resolved "http://172.16.1.252:4873/@types%2fzen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
 
 "@webassemblyjs/ast@1.7.6":
   version "1.7.6"
@@ -838,12 +846,60 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+apollo-angular-link-http-common@~1.4.0:
+  version "1.4.0"
+  resolved "http://172.16.1.252:4873/apollo-angular-link-http-common/-/apollo-angular-link-http-common-1.4.0.tgz#9e361f481562fad9151f95c43ccafc10ba728426"
+  dependencies:
+    tslib "^1.9.0"
+
+apollo-angular-link-http@^1.4.0:
+  version "1.4.0"
+  resolved "http://172.16.1.252:4873/apollo-angular-link-http/-/apollo-angular-link-http-1.4.0.tgz#6ae499b3ed44e2201a31f41efef1771580b14069"
+  dependencies:
+    apollo-angular-link-http-common "~1.4.0"
+    tslib "^1.9.0"
+
+apollo-angular@^1.5.0:
+  version "1.5.0"
+  resolved "http://172.16.1.252:4873/apollo-angular/-/apollo-angular-1.5.0.tgz#da653b76189fb72ea801c51996ea87fe19aa064f"
+  dependencies:
+    semver "^5.5.1"
+    tslib "^1.9.0"
+
 apollo-cache-control@^0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/apollo-cache-control/-/apollo-cache-control-0.2.5.tgz#0831ad796754a7beec858668f99e7517fe744a1e"
   dependencies:
     apollo-server-env "^2.0.3"
     graphql-extensions "^0.2.1"
+
+apollo-cache-inmemory@^1.3.7:
+  version "1.3.7"
+  resolved "http://172.16.1.252:4873/apollo-cache-inmemory/-/apollo-cache-inmemory-1.3.7.tgz#a9dabead5939e19068040c97c7c1009619a9df37"
+  dependencies:
+    apollo-cache "^1.1.19"
+    apollo-utilities "^1.0.24"
+    optimism "^0.6.6"
+
+apollo-cache@1.1.19, apollo-cache@^1.1.19:
+  version "1.1.19"
+  resolved "http://172.16.1.252:4873/apollo-cache/-/apollo-cache-1.1.19.tgz#a9ff2b6c70ab888c29ea038d8642b5698f115a3a"
+  dependencies:
+    apollo-utilities "^1.0.24"
+
+apollo-client@^2.4.4:
+  version "2.4.4"
+  resolved "http://172.16.1.252:4873/apollo-client/-/apollo-client-2.4.4.tgz#b96d4fc2dd856b24552bb2e2da466219b0d4eb1f"
+  dependencies:
+    "@types/zen-observable" "^0.8.0"
+    apollo-cache "1.1.19"
+    apollo-link "^1.0.0"
+    apollo-link-dedup "^1.0.0"
+    apollo-utilities "1.0.24"
+    symbol-observable "^1.0.2"
+    zen-observable "^0.8.0"
+  optionalDependencies:
+    "@types/async" "2.0.50"
 
 apollo-datasource@^0.1.3:
   version "0.1.3"
@@ -868,7 +924,13 @@ apollo-engine-reporting@^0.0.6:
     graphql-extensions "^0.2.1"
     lodash "^4.17.10"
 
-apollo-link@^1.2.2:
+apollo-link-dedup@^1.0.0:
+  version "1.0.10"
+  resolved "http://172.16.1.252:4873/apollo-link-dedup/-/apollo-link-dedup-1.0.10.tgz#7b94589fe7f969777efd18a129043c78430800ae"
+  dependencies:
+    apollo-link "^1.2.3"
+
+apollo-link@^1.0.0, apollo-link@^1.2.2, apollo-link@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.2.3.tgz#9bd8d5fe1d88d31dc91dae9ecc22474d451fb70d"
   dependencies:
@@ -948,6 +1010,12 @@ apollo-tracing@^0.2.5:
   dependencies:
     apollo-server-env "^2.0.3"
     graphql-extensions "^0.2.1"
+
+apollo-utilities@1.0.24, apollo-utilities@^1.0.24:
+  version "1.0.24"
+  resolved "http://172.16.1.252:4873/apollo-utilities/-/apollo-utilities-1.0.24.tgz#77d2d3008bb9ee52aa76b799ce7a8d6cb6cf8a1c"
+  dependencies:
+    fast-json-stable-stringify "^2.0.0"
 
 apollo-utilities@^1.0.0, apollo-utilities@^1.0.1:
   version "1.0.22"
@@ -3473,6 +3541,10 @@ graphql-subscriptions@^0.5.8:
   dependencies:
     iterall "^1.2.1"
 
+graphql-tag@^2.10.0:
+  version "2.10.0"
+  resolved "http://172.16.1.252:4873/graphql-tag/-/graphql-tag-2.10.0.tgz#87da024be863e357551b2b8700e496ee2d4353ae"
+
 graphql-tag@^2.9.2:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.0.tgz#87da024be863e357551b2b8700e496ee2d4353ae"
@@ -3489,7 +3561,7 @@ graphql-tools@^3.0.4:
 
 graphql@^14.0.2:
   version "14.0.2"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.0.2.tgz#7dded337a4c3fd2d075692323384034b357f5650"
+  resolved "http://172.16.1.252:4873/graphql/-/graphql-14.0.2.tgz#7dded337a4c3fd2d075692323384034b357f5650"
   dependencies:
     iterall "^1.2.2"
 
@@ -3727,6 +3799,10 @@ image-size@~0.5.0:
 immediate@~3.0.5:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
+
+immutable-tuple@^0.4.9:
+  version "0.4.9"
+  resolved "http://172.16.1.252:4873/immutable-tuple/-/immutable-tuple-0.4.9.tgz#473ebdd6c169c461913a454bf87ef8f601a20ff0"
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -4635,7 +4711,7 @@ lodash.unescape@4.0.1:
   version "4.0.1"
   resolved "http://172.16.1.252:4873/lodash.unescape/-/lodash.unescape-4.0.1.tgz#bf2249886ce514cda112fae9218cdc065211fc9c"
 
-lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.5.0, lodash@~4.17.10:
+lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.5.0, lodash@~4.17.10:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
@@ -5392,6 +5468,12 @@ opn@^5.1.0:
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.4.0.tgz#cb545e7aab78562beb11aa3bfabc7042e1761035"
   dependencies:
     is-wsl "^1.1.0"
+
+optimism@^0.6.6:
+  version "0.6.7"
+  resolved "http://172.16.1.252:4873/optimism/-/optimism-0.6.7.tgz#c3fbc605b86b83a7529f374c1e5e70450d46d8bd"
+  dependencies:
+    immutable-tuple "^0.4.9"
 
 optimist@^0.6.1, optimist@~0.6.0:
   version "0.6.1"
@@ -7172,7 +7254,7 @@ supports-color@^5.1.0, supports-color@^5.2.0, supports-color@^5.3.0, supports-co
   dependencies:
     has-flag "^3.0.0"
 
-symbol-observable@1.2.0, symbol-observable@^1.0.4:
+symbol-observable@1.2.0, symbol-observable@^1.0.2, symbol-observable@^1.0.4:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 

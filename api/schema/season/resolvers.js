@@ -1,11 +1,9 @@
 //
-const { fetchLeagueAPI } = require('../../sevice');
+const { getSeasonAvailable } = require('../../sevice');
 
 const resolvers = {
     Query: {
-        getSeasonAvailable: async (root, args, context) => await fetchLeagueAPI(),
-    },
+        getSeasonAvailable: async (root, args, context) => await getSeasonAvailable(args.league_slug)
+    }
 };
-
-// await setWebsiteStatusWidget(args.websiteStatusWidget)
 module.exports = resolvers;

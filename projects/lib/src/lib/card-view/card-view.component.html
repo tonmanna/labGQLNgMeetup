@@ -1,3 +1,3 @@
-<p>
-  card-view works!
-</p>
+<ul>
+  <li *ngFor="let item of lists | async" (click)="click(item)">{{item.name}}</li>
+</ul>

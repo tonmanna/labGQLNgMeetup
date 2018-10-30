@@ -1,7 +1,6 @@
-<marquee>
-    <div style="background-color:black;width: 250px;text-align: center; padding: 50px;">
-        <div><img src="https://www.catdumb.com/wp-content/uploads/2016/09/21.gif" height="80px" (click)="sayhi()"></div>
-        <span style="color:red">รัก</span><span style="color:yellow" >ลูกมากนะ แมววววว</span>        
-    </div>
-</marquee>
-<lib-list-item></lib-list-item>
+Leagues
+<lib-card-view (clicked)="cickedLeagues($event)" [lists]="leagueList"></lib-card-view>
+Seasons
+<lib-card-view (clicked)="cickedSeason($event)" [lists]="seasonList"></lib-card-view>
+TopScore
+<lib-player-card-view [lists]="topScoreList"></lib-player-card-view>

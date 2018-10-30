@@ -29,12 +29,10 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "projects/front/src/environments/environment.ts",
-                  "with": "projects/front/src/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [{
+                "replace": "projects/front/src/environments/environment.ts",
+                "with": "projects/front/src/environments/environment.prod.ts"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -157,12 +155,10 @@
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "projects/playground/environments/environment.ts",
-                  "with": "projects/playground/environments/environment.prod.ts"
-                }
-              ],
+              "fileReplacements": [{
+                "replace": "projects/playground/environments/environment.ts",
+                "with": "projects/playground/environments/environment.prod.ts"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -183,7 +179,7 @@
           }
         }
       }
-    }    
+    }
   },
   "defaultProject": "labGQLNgMeetup"
 }

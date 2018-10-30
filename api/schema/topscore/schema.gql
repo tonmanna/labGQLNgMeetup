@@ -1,4 +1,4 @@
-type topScore {
+type TopScore {
     identifier: String
     fullname: String
     player_identifier: String
@@ -12,6 +12,11 @@ type topScore {
     team_identifier: String
 }
 
-type Mutation {
-    getLeageTopScore(league_slug: LeagueInput): League
+input LeagueInput {
+    league_slug: String
+    season_slug: String
+}
+
+extend type Query {
+    getLeageTopScore(leagueInput: LeagueInput): [TopScore]
 }

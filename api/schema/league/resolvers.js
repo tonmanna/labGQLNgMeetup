@@ -1,12 +1,11 @@
-const { fetchLeagueAPI } = require('../../sevice');
+const { getLeagues } = require('../../sevice');
 
 const resolvers = {
     Query: {
-        leagues: async (root, args, context) => await fetchLeagueAPI(),
-    },
-    Mutation: {
-        getLeagebySlug: (root, args) => [],
-    },
+        getLeagues: async (root, args, context) => {
+            return await getLeagues();
+        }
+    }
 };
 
 // await setWebsiteStatusWidget(args.websiteStatusWidget)

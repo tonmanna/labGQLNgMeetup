@@ -1,0 +1,13 @@
+scalar Date
+
+type Season {
+    identifier: String
+    league_identifier: String
+    season_slug: String
+    name: String
+    season_start: Date
+    season_end: Date
+}
+extend type Query {
+    getSeasonAvailable(league_slug: String): [Season]
+}

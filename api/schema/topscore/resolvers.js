@@ -1,9 +1,9 @@
 const { getLeageTopScore } = require('../../sevice');
 
 const resolvers = {
-    Mutation: {
-        getLeageTopScore: async (root, args) => await getLeageTopScore(args.league_slug, args.season_slug),
-    },
+    Query: {
+        getLeageTopScore: async (root, args) => await getLeageTopScore(args.leagueInput.league_slug, args.leagueInput.season_slug)
+    }
 };
 
 // await setWebsiteStatusWidget(args.websiteStatusWidget)

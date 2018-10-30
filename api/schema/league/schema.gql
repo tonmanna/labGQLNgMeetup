@@ -1,16 +1,21 @@
+"""
+ใช้ในการ เก็บ Object ชนิด League
+"""
 type League {
     identifier: String
     league_slug: String
+    """
+    ชื่อของ League
+    """
     name: String
     nation: String
     level: Int
     federation: String
     cup: Boolean
 }
-extend type Query {
-    leagues: [League]
-}
-
-input LeagueInput {
-    league_slug: String
+type Query {
+    """
+    ใช้ในการเรียกข้อมูล League
+    """
+    getLeagues: [League]
 }
